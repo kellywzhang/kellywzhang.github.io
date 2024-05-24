@@ -19,7 +19,7 @@ profile:
 
 news: true # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
-social: false # includes social icons at the bottom of the page
+social: true # includes social icons at the bottom of the page
 ---
 
 I'm a Postdoctoral Fellow at <a href="https://business.columbia.edu/" target="_blank" rel="noopener noreferrer">Columbia Business School</a> in the Descision, Risk, and Optimization group, working with <a href="https://djrusso.github.io/" target="_blank" rel="noopener noreferrer">Daniel Russo</a> and <a href="https://hsnamkoong.github.io/">Hongseok Namkoong</a>.
