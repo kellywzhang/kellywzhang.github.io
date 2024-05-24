@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Postdoctoral Fellow at Columbia University
+subtitle: <b>Postdoctoral Fellow at Columbia University</b>
 
 profile:
   align: right
