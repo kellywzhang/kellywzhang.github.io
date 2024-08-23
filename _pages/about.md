@@ -10,7 +10,8 @@ profile:
   image_circular: false # crops the image to make it circular
   more_info: >
     <center>
-    <p>kewzha@gmail.com</p>
+    <p>kelly.zhang@imperial.ac.uk</p>
+    <!--<p>kewzha@gmail.com</p>-->
     <p>[<a href="https://scholar.google.com/citations?user=VDwprrsAAAAJ&hl=en">Google Scholar</a>]</p>
     <br>
     <!--<p>[<a href="assets/pdf/kellywzhang_CV.pdf" target="_blank" rel="noopener noreferrer">CV</a>]</p>-->
