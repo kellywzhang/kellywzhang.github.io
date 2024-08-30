@@ -1,9 +1,11 @@
-"AJP":
-  url: https://aapt.scitation.org/journal/ajp
-  color: "#00369f"
+"Statistical Inference":
+  color: "#7ae558"
 
-"PhysRev":
-  url: https://journals.aps.org/
+"Bandit/RL Algorithms":
+  color: "#9fccff"
 
-"Vision":
-  color: "#009f36"
+"Clinical Trials":
+  color: "#ffef9f"
+
+"NLP":
+  color: "#ff97e3"

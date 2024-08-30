@@ -1,8 +1,8 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
-subtitle: <b>Assistant Professor at Imperial College London</b>
+subtitle: <b>Lecturer (Assistant Professor) at Imperial College London</b>
 
 profile:
   align: right
@@ -17,6 +17,7 @@ profile:
     <!--<p>[<a href="assets/pdf/kellywzhang_CV.pdf" target="_blank" rel="noopener noreferrer">CV</a>]</p>-->
     <p>[<a href="https://github.com/kellywzhang">Github</a>]</p>
     <p>[<a href="https://twitter.com/kewzha">Twitter</a>]</p>
+    <p>Office: <a href="https://www.imperial.ac.uk/i-hub/find-i-hub">I-HUB</a> Level 5, Pod 3</p>
     </center>
 
 news: true # includes a list of news items
@@ -24,7 +25,7 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: false # includes social icons at the bottom of the page
 ---
 
-I am an Assistant Professor at <a href="https://www.imperial.ac.uk/" target="_blank" rel="noopener noreferrer">Imperial College London</a> in the Mathematics Department (statistics section). I am also a faculty member in the <a href="https://ix.imperial.ac.uk/" target="_blank" rel="noopener noreferrer">Imperial-X</a>, an interdisciplinary AI initiative.
+I am an Lecturer (UK version of Assistant Professor) at <a href="https://www.imperial.ac.uk/" target="_blank" rel="noopener noreferrer">Imperial College London</a> in the Mathematics Department (statistics section). I am also a faculty member in the <a href="https://ix.imperial.ac.uk/" target="_blank" rel="noopener noreferrer">I-X</a>, an interdisciplinary AI initiative at Imperial.
 My research interests lie at the intersection of <em>adaptive experimentation</em>, <em>reinforcement learning</em>, and <em>statistical inference</em>.
 
 I previously was a Postdoctoral Fellow at <a href="https://business.columbia.edu/" target="_blank" rel="noopener noreferrer">Columbia Business School</a> in the Descision, Risk, and Optimization group, working with <a href="https://djrusso.github.io/" target="_blank" rel="noopener noreferrer">Daniel Russo</a> and <a href="https://hsnamkoong.github.io/">Hongseok Namkoong</a>.
