@@ -1,11 +1,24 @@
 ---
 ---
 
+@article{impatientBandits2025,
+  abbr={Bandit/RL Algorithms},
+  bibtex_show={true},
+  title={Impatient Bandits: Optimizing for the Long-Term Without Delay},
+  author={Zhang, Kelly W and Baldwin-McDonald, Thomas and Ciosek, Kamil and Maystre, Lucas and Russo, Daniel},
+  journal={Preprint},
+  year={2025},
+  pdf={https://arxiv.org/abs/2501.07761},
+  abstract={Increasingly, recommender systems are tasked with improving users' long-term satisfaction. In this context, we study a content exploration task, which we formalize as a bandit problem with delayed rewards. There is an apparent trade-off in choosing the learning signal: waiting for the full reward to become available might take several weeks, slowing the rate of learning, whereas using short-term proxy rewards reflects the actual long-term goal only imperfectly. First, we develop a predictive model of delayed rewards that incorporates all information obtained to date. Rewards as well as shorter-term surrogate outcomes are combined through a Bayesian filter to obtain a probabilistic belief. Second, we devise a bandit algorithm that quickly learns to identify content aligned with long-term success using this new predictive model. We prove a regret bound for our algorithm that depends on the Value of Progressive Feedback, an information theoretic metric that captures the quality of short-term leading indicators that are observed prior to the long-term reward. We apply our approach to a podcast recommendation problem, where we seek to recommend shows that users engage with repeatedly over two months. We empirically validate that our approach significantly outperforms methods that optimize for short-term proxies or rely solely on delayed rewards, as demonstrated by an A/B test in a recommendation system that serves hundreds of millions of users.},
+  selected={true}
+}
+
+
 @article{replicableBandits2024,
   abbr={Statistical Inference},
   bibtex_show={true},
   title={Replicable Bandits for Digital Health Interventions},
-  author={Zhang, Kelly W. and Closser, Nowell and Trella, Anna L. and Murphy, Susan A.}, 
+  author={Zhang, Kelly W and Closser, Nowell and Trella, Anna L. and Murphy, Susan A.}, 
   journal={Preprint},
   year={2024},
   pdf={http://arxiv.org/abs/2407.15377},
