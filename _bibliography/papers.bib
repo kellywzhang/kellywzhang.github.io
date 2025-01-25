@@ -33,7 +33,7 @@
   bibtex_show={true},
   title={Posterior Sampling via Autoregressive Generation},
   author={Zhang*, Kelly W and Cai*, Tiffany (Tianhui) and Namkoong, Hongseok and Russo, Daniel},
-  journal={Preprint},
+  journal={Working paper},
   year={2024},
   pdf={https://arxiv.org/abs/2405.19466},
   abstract={Real-world decision-making requires grappling with a perpetual lack of data as environments change; intelligent agents must comprehend uncertainty and actively gather information to resolve it. We propose a new framework for learning bandit algorithms from massive historical data, which we demonstrate in a cold-start recommendation problem. First, we use historical data to pretrain an autoregressive model to predict a sequence of repeated feedback/rewards (e.g., responses to news articles shown to different users over time). In learning to make accurate predictions, the model implicitly learns an informed prior based on rich action features (e.g., article headlines) and how to sharpen beliefs as more rewards are gathered (e.g., clicks as each article is recommended). At decision-time, we autoregressively sample (impute) an imagined sequence of rewards for each action, and choose the action with the largest average imputed reward. Far from a heuristic, our approach is an implementation of Thompson sampling (with a learned prior), a prominent active exploration algorithm. We prove our pretraining loss directly controls online decision-making performance, and we demonstrate our framework on a news recommendation task where we integrate end-to-end fine-tuning of a pretrained language model to process news article headline text to improve performance.},
@@ -46,18 +46,33 @@
   bibtex_show={true},
   title={Monitoring Fidelity of Online Reinforcement Learning Algorithms in Clinical Trials},
   author={Trella, Anna L and Zhang, Kelly W and Nahum-Shani, Inbal and Shetty, Vivek and Yan, Iris and Doshi-Velez, Finale and Murphy, Susan A},
-  journal={Innovative Applications of Artificial Intelligence (IAAI-25)},
+  journal={Proceedings of the AAAI Conference on Artificial Intelligence},
   year={2025},
   pdf={https://arxiv.org/abs/2402.17003},
   abstract={Online reinforcement learning (RL) algorithms offer great potential for personalizing treatment for participants in clinical trials. However, deploying an online, autonomous algorithm in the high-stakes healthcare setting makes quality control and data quality especially difficult to achieve. This paper proposes algorithm fidelity as a critical requirement for deploying online RL algorithms in clinical trials. It emphasizes the responsibility of the algorithm to (1) safeguard participants and (2) preserve the scientific utility of the data for post-trial analyses. We also present a framework for pre-deployment planning and real-time monitoring to help algorithm developers and clinical researchers ensure algorithm fidelity. To illustrate our framework's practical application, we present real-world examples from the Oralytics clinical trial. Since Spring 2023, this trial successfully deployed an autonomous, online RL algorithm to personalize behavioral interventions for participants at risk for dental disease.}
 }
+
+
+@article{oralytics2024,
+  abbr={Bandit/RL Algorithms},
+  bibtex_show={true},
+  title={Oralytics Reinforcement Learning Algorithm},
+  author={Trella, Anna L and Zhang, Kelly W and Carpenter, Stephanie M and Elashoff, David and Greer, Zara M and Nahum-Shani, Inbal and Ruenger, Dennis and Shetty, Vivek and Doshi-Velez, Finale and Murphy, Susan A},
+  journal={Technical report},
+  year={2024},
+  pdf={https://arxiv.org/abs/2406.13127},
+  abstract={Dental disease is still one of the most common chronic diseases in the United States. While dental disease is preventable through healthy oral self-care behaviors (OSCB), this basic behavior is not consistently practiced. We have developed Oralytics, an online, reinforcement learning (RL) algorithm that optimizes the delivery of personalized intervention prompts to improve OSCB. In this paper, we offer a full overview of algorithm design decisions made using prior data, domain expertise, and experiments in a simulation test bed. The finalized RL algorithm was deployed in the Oralytics clinical trial, conducted from fall 2023 to summer 2024.},
+  selected={false}
+}
+
+
 
 @article{xu2024fallacy,
   bibtex_show={true},
   abbr={Bandit/RL Algorithms},
   title={The Fallacy of Minimizing Local Regret in the Sequential Task Setting},
   author={Xu, Ziping and Zhang, Kelly W, and Murphy, Susan},
-  journal={Preprint},
+  journal={Working paper},
   year={2024},
   pdf={https://arxiv.org/abs/2403.10946},
   abstract={In the realm of Reinforcement Learning (RL), online RL is often conceptualized as an optimization problem, where an algorithm interacts with an unknown environment to minimize cumulative regret. In a stationary setting, strong theoretical guarantees, like a sublinear (√T) regret bound, can be obtained, which typically implies the convergence to an optimal policy and the cessation of exploration. However, these theoretical setups often oversimplify the complexities encountered in real-world RL implementations, where tasks arrive sequentially with substantial changes between tasks and the algorithm may not be allowed to adaptively learn within certain tasks. We study the changes beyond the outcome distributions, encompassing changes in the reward designs (mappings from outcomes to rewards) and the permissible policy spaces. Our results reveal the fallacy of myopically minimizing regret within each task: obtaining optimal regret rates in the early tasks may lead to worse rates in the subsequent ones, even when the outcome distributions stay the same. To realize the optimal cumulative regret bound across all the tasks, the algorithm has to overly explore in the earlier tasks. This theoretical insight is practically significant, suggesting that due to unanticipated changes (e.g., rapid technological development or human-in-the-loop involvement) between tasks, the algorithm needs to explore more than it would in the usual stationary setting within each task. Such implication resonates with the common practice of using clipped policies in mobile health clinical trials and maintaining a fixed rate of ϵ-greedy exploration in robotic learning.}
@@ -140,7 +155,7 @@ Conclusion: This study represents a critical first step in developing an effecti
   abbr={Statistical Inference},
   title={Statistical Inference after Adaptive Sampling for Longitudinal Data},
   author={Zhang, Kelly W and Janson, Lucas and Murphy, Susan A},
-  journal={Preprint},
+  journal={Working paper},
   year={2023},
   pdf={https://arxiv.org/abs/2202.07098},
   abstract={Online reinforcement learning and other adaptive sampling algorithms are increasingly used in digital intervention experiments to optimize treatment delivery for users over time. In this work, we focus on longitudinal user data collected by a large class of adaptive sampling algorithms that are designed to optimize treatment decisions online using accruing data from multiple users. Combining or "pooling" data across users allows adaptive sampling algorithms to potentially learn faster. However, by pooling, these algorithms induce dependence between the sampled user data trajectories; we show that this can cause standard variance estimators for i.i.d. data to underestimate the true variance of common estimators on this data type. We develop novel methods to perform a variety of statistical analyses on such adaptively sampled data via Z-estimation. Specifically, we introduce the \textit{adaptive} sandwich variance estimator, a corrected sandwich estimator that leads to consistent variance estimates under adaptive sampling. Additionally, to prove our results we develop novel theoretical tools for empirical processes on non-i.i.d., adaptively sampled longitudinal data which may be of independent interest. This work is motivated by our efforts in designing experiments in which online reinforcement learning algorithms optimize treatment decisions, yet statistical inference is essential for conducting analyses after experiments conclude.}
