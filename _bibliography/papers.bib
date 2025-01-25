@@ -6,7 +6,7 @@
   bibtex_show={true},
   title={Impatient Bandits: Optimizing for the Long-Term Without Delay},
   author={Zhang, Kelly W and Baldwin-McDonald, Thomas and Ciosek, Kamil and Maystre, Lucas and Russo, Daniel},
-  journal={Preprint},
+  journal={Under submission},
   year={2025},
   pdf={https://arxiv.org/abs/2501.07761},
   abstract={Increasingly, recommender systems are tasked with improving users' long-term satisfaction. In this context, we study a content exploration task, which we formalize as a bandit problem with delayed rewards. There is an apparent trade-off in choosing the learning signal: waiting for the full reward to become available might take several weeks, slowing the rate of learning, whereas using short-term proxy rewards reflects the actual long-term goal only imperfectly. First, we develop a predictive model of delayed rewards that incorporates all information obtained to date. Rewards as well as shorter-term surrogate outcomes are combined through a Bayesian filter to obtain a probabilistic belief. Second, we devise a bandit algorithm that quickly learns to identify content aligned with long-term success using this new predictive model. We prove a regret bound for our algorithm that depends on the Value of Progressive Feedback, an information theoretic metric that captures the quality of short-term leading indicators that are observed prior to the long-term reward. We apply our approach to a podcast recommendation problem, where we seek to recommend shows that users engage with repeatedly over two months. We empirically validate that our approach significantly outperforms methods that optimize for short-term proxies or rely solely on delayed rewards, as demonstrated by an A/B test in a recommendation system that serves hundreds of millions of users.},
@@ -14,16 +14,16 @@
 }
 
 
-@article{replicableBandits2024,
+@article{replicableBandits2025,
   abbr={Statistical Inference},
   bibtex_show={true},
   title={Replicable Bandits for Digital Health Interventions},
   author={Zhang, Kelly W and Closser, Nowell and Trella, Anna L. and Murphy, Susan A.}, 
-  journal={Preprint},
-  year={2024},
+  journal={Minor revision at Statistical Science},
+  year={2025},
   pdf={http://arxiv.org/abs/2407.15377},
   abstract={Adaptive treatment assignment algorithms, such as bandit and reinforcement learning algorithms, are increasingly used in digital health intervention clinical trials. Causal inference and related data analyses are critical for evaluating digital health interventions, deciding how to refine the intervention, and deciding whether to roll-out the intervention more broadly. However the replicability of these analyses has received relatively little attention. This work investigates the replicability of statistical analyses from trials deploying adaptive treatment assignment algorithms. We demonstrate that many standard statistical estimators can be inconsistent and fail to be replicable across repetitions of the clinical trial, even as the sample size grows large. We show that this non-replicability is intimately related to properties of the adaptive algorithm itself. We introduce a formal definition of a "replicable bandit algorithm" and prove that under such algorithms, a wide variety of common statistical analyses are guaranteed to be consistent. We present both theoretical results and simulation studies based on a mobile health oral health self-care intervention. Our findings underscore the importance of designing adaptive algorithms with replicability in mind, especially for settings like digital health where deployment decisions rely heavily on replicated evidence. We conclude by discussing open questions on the connections between algorithm design, statistical inference, and experimental replicability.},
-  selected={false}
+  selected={true}
 }
 
 
@@ -41,13 +41,13 @@
 }
 
 
-@article{trella2024monitoring,
+@article{trella2025monitoring,
   abbr={Bandit/RL Algorithms},
   bibtex_show={true},
   title={Monitoring Fidelity of Online Reinforcement Learning Algorithms in Clinical Trials},
   author={Trella, Anna L and Zhang, Kelly W and Nahum-Shani, Inbal and Shetty, Vivek and Yan, Iris and Doshi-Velez, Finale and Murphy, Susan A},
-  journal={Preprint},
-  year={2024},
+  journal={Innovative Applications of Artificial Intelligence (IAAI-25)},
+  year={2025},
   pdf={https://arxiv.org/abs/2402.17003},
   abstract={Online reinforcement learning (RL) algorithms offer great potential for personalizing treatment for participants in clinical trials. However, deploying an online, autonomous algorithm in the high-stakes healthcare setting makes quality control and data quality especially difficult to achieve. This paper proposes algorithm fidelity as a critical requirement for deploying online RL algorithms in clinical trials. It emphasizes the responsibility of the algorithm to (1) safeguard participants and (2) preserve the scientific utility of the data for post-trial analyses. We also present a framework for pre-deployment planning and real-time monitoring to help algorithm developers and clinical researchers ensure algorithm fidelity. To illustrate our framework's practical application, we present real-world examples from the Oralytics clinical trial. Since Spring 2023, this trial successfully deployed an autonomous, online RL algorithm to personalize behavioral interventions for participants at risk for dental disease.}
 }
@@ -81,8 +81,16 @@
   abbr={Clinical Trials},
   title={A mobile health intervention for emerging adults with regular cannabis use: A micro-randomized pilot trial design protocol},
   author={Coughlin, Lara N. and Campbell, Maya and  Wheeler, Tiffany and  Rodriguez, Chavez and Florimbio, Autumn and Ghosh, Susobhan and Guo, Yongyi and Hung, Pei-Yao and Zhang, Kelly W and Zimmerman, Lauren and Bonar, Erin and Walton, Maureen and Murphy, Susan and Nahum-Shani, Inbal},
-  journal={Preprint},
-  year={2024}
+  journal={Contemporary Clinical Trials},
+  pdf={https://www.sciencedirect.com/science/article/abs/pii/S1551714424002507?via%3Dihub},
+  publisher={Elsevier},
+  pubmed={https://pubmed.ncbi.nlm.nih.gov/39159806/},
+  year={2024},
+  abstract={Background: Emerging adult (EA) cannabis use is associated with increased risk for health consequences. Just-in-time adaptive interventions (JITAIs) provide potential for preventing the escalation and consequences of cannabis use. Powered by mobile devices, JITAIs use decision rules that take the person's state and context as input, and output a recommended intervention (e.g., alternative activities, coping strategies). The mHealth literature on JITAIs is nascent, with additional research needed to identify what intervention content to deliver when and to whom.
+
+Methods: Herein we describe the protocol for a pilot study testing the feasibility and acceptability of a micro-randomized trial for optimizing MiWaves mobile intervention app for EAs (ages 18-25; target N = 120) with regular cannabis use (≥3 times per week). Micro-randomizations will be determined by a reinforcement learning algorithm that continually learns and improves the decision rules as participants experience the intervention. MiWaves will prompt participants to complete an in-app twice-daily survey over 30 days and participants will be micro-randomized twice daily to either: no message or a message [1 of 6 types varying in length (short, long) and interaction type (acknowledge message, acknowledge message + click additional resources, acknowledge message + fill in the blank/select an option)]. Participants recruited via social media will download the MiWaves app, and complete screening, baseline, weekly, post-intervention, and 2-month follow-up assessments. Primary outcomes include feasibility and acceptability, with additional exploratory behavioral outcomes.
+
+Conclusion: This study represents a critical first step in developing an effective mHealth intervention for reducing cannabis use and associated harms in EAs.}
 }
 
 @article{nahum2024optimizing,
