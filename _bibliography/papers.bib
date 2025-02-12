@@ -1,6 +1,18 @@
 ---
 ---
 
+@article{psarContext2025,
+  abbr={Bandit/RL Algorithms},
+  bibtex_show={true},
+  title={Contextual Thompson Sampling via Generation of Missing Data},
+  author={Zhang, Kelly W and Cai, Tiffany (Tianhui) and Namkoong, Hongseok and Russo, Daniel},
+  journal={Under submission},
+  year={2025},
+  pdf={https://arxiv.org/abs/2502.07064},
+  abstract={We introduce a framework for Thompson sampling contextual bandit algorithms, in which the algorithm's ability to quantify uncertainty and make decisions depends on the quality of a generative model that is learned offline. Instead of viewing uncertainty in the environment as arising from unobservable latent parameters, our algorithm treats uncertainty as stemming from missing, but potentially observable, future outcomes. If these future outcomes were all observed, one could simply make decisions using an "oracle" policy fit on the complete dataset. Inspired by this conceptualization, at each decision-time, our algorithm uses a generative model to probabilistically impute missing future outcomes, fits a policy using the imputed complete dataset, and uses that policy to select the next action. We formally show that this algorithm is a generative formulation of Thompson Sampling and prove a state-of-the-art regret bound for it. Notably, our regret bound i) depends on the probabilistic generative model only through the quality of its offline prediction loss, and ii) applies to any method of fitting the "oracle" policy, which easily allows one to adapt Thompson sampling to decision-making settings with fairness and/or resource constraints.},
+  selected={true}
+}
+
 @article{impatientBandits2025,
   abbr={Bandit/RL Algorithms},
   bibtex_show={true},
