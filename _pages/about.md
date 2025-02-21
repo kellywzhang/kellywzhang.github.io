@@ -11,13 +11,13 @@ profile:
   more_info: >
     <center>
     <p>kelly.zhang@imperial.ac.uk</p>
-    <!--<p>kewzha@gmail.com</p>-->
-    <p>[<a href="https://scholar.google.com/citations?user=VDwprrsAAAAJ&hl=en">Google Scholar</a>]</p>
     <br>
-    <p>[<a href="https://github.com/kellywzhang">Github</a>]</p>
-    <p>[<a href="https://twitter.com/kewzha">Twitter</a>]</p>
-    <p>[<a href="assets/pdf/kellywzhang_CV.pdf" target="_blank" rel="noopener noreferrer">CV (last updated Feb 2025)</a>]</p>
-    <p>Office: <a href="https://www.imperial.ac.uk/i-hub/find-i-hub">I-HUB</a> Level 5, Pod 3</p>
+    <!--<p>[<a href="https://github.com/kellywzhang">Github</a>]</p>-->
+    <!--<p>Office: <a href="https://www.imperial.ac.uk/i-hub/find-i-hub">I-HUB</a> Level 5</p>-->
+    <p><a href="https://scholar.google.com/citations?user=8jlpWFAAAAAJ&hl=en">Google Scholar</a></p>,
+    <p><a href="assets/pdf/kellywzhang_CV.pdf" target="_blank" rel="noopener noreferrer">CV (Feb 2025)</a></p>,
+    <p><a href="https://twitter.com/kewzha">"Twitter"</a></p>
+    <br>
     </center>
 
 news: true # includes a list of news items
