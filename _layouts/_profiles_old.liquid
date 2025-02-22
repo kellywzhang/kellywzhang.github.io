@@ -3,12 +3,10 @@ layout: page
 ---
 <div class="post">
   <article>
-  {% if page.profiles %}
-  <div class="container">
-      <div class="row justify-content-center">
-      <div style="display: flex; flex-wrap: wrap; gap: 30px;">
+    {% if page.profiles %}
       {% for profile in page.profiles %}
-        <div class="profile text-center">
+        <hr>
+        <div class="profile float-{% if profile.align == 'left' %}left{% else %}right{% endif %}">
           {% if profile.image %}
             {% assign profile_image_path = profile.image | prepend: 'assets/img/' %}
             {% if profile.image_circular %}
@@ -19,21 +17,20 @@ layout: page
             {% capture sizes %}(min-width: {{site.max_width}}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px) 30vw, 95vw"{% endcapture %}
             {% include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=profile.image %}
           {% endif %}
-          {% if profile.name %}
-            {% if profile.link %}
-              <p clasgjs="profile-name"><a href="{{ profile.link }}" target="_blank">{{ profile.name }}</a></p>
-            {% else %}
-              <p class="profile-name">{{ profile.name }}</p>
-            {% endif %}
+          {% if profile.more_info %}
+            <div class="more-info">{{ profile.more_info }}</div>
           {% endif %}
-          {% if profile.department %}
-            <p class="profile-department">{{ profile.department | markdownify }}</p>
+        </div>
+
+        <div class="clearfix">
+          {% if profile.content %}
+            {% capture profile_content %}{% include_relative {{ profile.content }} %}{% endcapture %}
+            {{ profile_content | markdownify }}
+          {% else %}
+            {{ content }}
           {% endif %}
-        </div>  
-    {% endfor %}
-      </div>
-      </div>
-    </div>
+        </div>
+      {% endfor %}
     {% endif %}
   </article>
 </div>
