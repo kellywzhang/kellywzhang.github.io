@@ -14,6 +14,12 @@ profiles:
     department: Ph.D. student (co-advised with Ciara Pike-Burke)
     link: "https://www.linkedin.com/in/michael-scoones/?originalSubdomain=uk"
   - align: left
+    image: lab/Chih-Yu-Chang.jpg
+    image_circular: false
+    name: Chih-Yu Chang
+    department: Ph.D. student (incoming in fall)
+    link: "https://cchihyu.github.io/"
+  - align: left
     image: lab/James-Widdowson.jpg 
     image_circular: 
     name: James Widdowson 
