@@ -8,12 +8,6 @@ nav_order: 7
 
 profiles:
   - align: left
-    image: lab/Michael-Scoones.jpg
-    image_circular: false
-    name: Michael Scoones
-    department: Ph.D. student (co-advised with Ciara Pike-Burke)
-    link: "https://www.linkedin.com/in/michael-scoones/?originalSubdomain=uk"
-  - align: left
     image: lab/Chih-Yu-Chang.jpg
     image_circular: false
     name: Chih-Yu Chang
@@ -29,13 +23,13 @@ profiles:
     image: lab/Lai-Wei-Siang.jpg
     image_circular: false
     name: Lai Wei Siang
-    department: Undergraduate
+    department: UROP student
     link: "https://www.linkedin.com/in/lai-wei-siang-ba2160242/?originalSubdomain=uk"
   - align: left
-    image: 
-    image_circular: 
-    name: 
-    department: 
-    link: 
+    image: lab/Bennie-Feng.jpg 
+    image_circular: false
+    name: Bennie Feng
+    department: UROP student
+    link: "https://www.linkedin.com/in/bennie-feng-aa10642aa/?originalSubdomain=uk"
 
 ---
