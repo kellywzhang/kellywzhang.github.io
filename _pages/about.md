@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: <b>Lecturer (Assistant Professor) at Imperial College London</b>
+subtitle: <b>Assistant Professor at Imperial College London</b>
 
 profile:
   align: right
@@ -25,7 +25,7 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: false # includes social icons at the bottom of the page
 ---
 
-I am an Lecturer (UK version of Assistant Professor) at <a href="https://www.imperial.ac.uk/" target="_blank" rel="noopener noreferrer">Imperial College London</a> in the Mathematics Department (statistics section). I am also a faculty member in the <a href="https://ix.imperial.ac.uk/" target="_blank" rel="noopener noreferrer">I-X</a>, an interdisciplinary AI initiative at Imperial.
+I am an Assistant Professor at <a href="https://www.imperial.ac.uk/" target="_blank" rel="noopener noreferrer">Imperial College London</a> in the Mathematics Department (statistics section). I am also a faculty member in the <a href="https://ix.imperial.ac.uk/" target="_blank" rel="noopener noreferrer">I-X</a>, an interdisciplinary AI initiative at Imperial.
 My research interests lie at the intersection of <em>adaptive experimentation</em>, <em>reinforcement learning</em>, and <em>statistical inference</em>.
 
 I previously was a Postdoctoral Fellow at <a href="https://business.columbia.edu/" target="_blank" rel="noopener noreferrer">Columbia Business School</a> in the Descision, Risk, and Optimization group, working with <a href="https://djrusso.github.io/" target="_blank" rel="noopener noreferrer">Daniel Russo</a> and <a href="https://hsnamkoong.github.io/">Hongseok Namkoong</a>.
