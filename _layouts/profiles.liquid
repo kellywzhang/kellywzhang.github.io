@@ -21,13 +21,13 @@ layout: page
           {% endif %}
           {% if profile.name %}
             {% if profile.link %}
-              <p clasgjs="profile-name"><a href="{{ profile.link }}" target="_blank">{{ profile.name }}</a></p>
+              <p style="font-size: 18px" clasgjs="profile-name"><strong><a href="{{ profile.link }}" target="_blank">{{ profile.name }}</a></strong><br>
+              <strong>{{ profile.department }}</strong><br>
+              {{ profile.coadvisor }}
+              </p>
             {% else %}
               <p class="profile-name">{{ profile.name }}</p>
             {% endif %}
-          {% endif %}
-	  {% if profile.department %}
-            <p class="profile-department">{{ profile.department | markdownify }}</p>
           {% endif %}
         </div>
 

@@ -12,7 +12,8 @@ nav_order: 8
 - **PhD Applicants:** If you are interested in doing a PhD with me, feel free to reach out to me. There are a variety of routes to doing a PhD:
     - [StatML Center for Doctoral Training](https://statml.io/)
     - [Math Department](https://www.imperial.ac.uk/mathematics/postgraduate/doctoral-programme/)
-    - There are also other centers for doctoral training on [AI4Health](https://ai4health.io/) and [Collaborative Computational Modelling at the Interface](https://ccmi-cdt.org/), which I may be able to admit students from. 
+    - [Commonwealth PhD Scholarships](https://cscuk.fcdo.gov.uk/scholarships/commonwealth-phd-scholarships-for-least-developed-countries-and-vulnerable-states/)
+    - There are also other centers for doctoral training on [AI4Health](https://ai4health.io/) and [Collaborative Computational Modelling at the Interface](https://ccmi-cdt.org/), which I may be able to admit students from.
 - **Imperial Msc Students:** If you are interested in doing a masters thesis project with me, reach out. I am advising masters students in multiple programs including I-X, statistics, and computing.
 - **Imperial Undergrads:** If you are an Imperial undergrad interested in working with me, send me an email with your resume, transcript, links to any projects you've worked on, and a paragraph about your interests. I also recommend looking into the [UROP](https://www.imperial.ac.uk/urop/) program. 
 - **Postdocs:** Postdoc funding opportunities are currently more limited, so I would encourage looking into [Schmidt AI in Science Fellowsips](https://www.imperial.ac.uk/ix-ai-in-science/-eric-and-wendy-schmidt-ai-in-science-global-faculty-fellowships/), as well as external fellowships.

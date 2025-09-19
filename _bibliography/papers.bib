@@ -1,6 +1,31 @@
 ---
 ---
 
+@article{psarContext2025,
+  abbr={Bandit/RL Algorithms},
+  bibtex_show={true},
+  title={Contextual Thompson Sampling via Generation of Missing Data},
+  author={Zhang, Kelly W and Cai, Tiffany (Tianhui) and Namkoong, Hongseok and Russo, Daniel},
+  journal={Advances in Neural Information Processing Systems (NeurIPS)},
+  year={2025},
+  pdf={https://arxiv.org/abs/2502.07064},
+  abstract={We introduce a framework for Thompson sampling contextual bandit algorithms, in which the algorithm's ability to quantify uncertainty and make decisions depends on the quality of a generative model that is learned offline. Instead of viewing uncertainty in the environment as arising from unobservable latent parameters, our algorithm treats uncertainty as stemming from missing, but potentially observable, future outcomes. If these future outcomes were all observed, one could simply make decisions using an "oracle" policy fit on the complete dataset. Inspired by this conceptualization, at each decision-time, our algorithm uses a generative model to probabilistically impute missing future outcomes, fits a policy using the imputed complete dataset, and uses that policy to select the next action. We formally show that this algorithm is a generative formulation of Thompson Sampling and prove a state-of-the-art regret bound for it. Notably, our regret bound i) depends on the probabilistic generative model only through the quality of its offline prediction loss, and ii) applies to any method of fitting the "oracle" policy, which easily allows one to adapt Thompson sampling to decision-making settings with fairness and/or resource constraints.},
+  selected={true}
+}
+
+
+@article{reproducible2025,
+  abbr={Bandit/RL Algorithms},
+  bibtex_show={true},
+  title={Reproducible workflow for online AI in digital health},
+  author={Ghosh, Susobhan and Gulapalli, Bhanu T. and Gao, Daiqi and Gazi, Asim and Trella, Anna and Xu, Ziping and Zhang, Kelly W. and Murphy, Susan A.},
+  journal={Philosophical Transactions A},
+  year={2025},
+  pdf={https://arxiv.org/abs/2509.13499},
+  abstract={Online artificial intelligence (AI) algorithms are an important component of digital health interventions. These online algorithms are designed to continually learn and improve their performance as streaming data is collected on individuals. Deploying online AI presents a key challenge: balancing adaptability of online AI with reproducibility. Online AI in digital interventions is a rapidly evolving area, driven by advances in algorithms, sensors, software, and devices. Digital health intervention development and deployment is a continuous process, where implementation - including the AI decision-making algorithm - is interspersed with cycles of re-development and optimization. Each deployment informs the next, making iterative deployment a defining characteristic of this field. This iterative nature underscores the importance of reproducibility: data collected across deployments must be accurately stored to have scientific utility, algorithm behavior must be auditable, and results must be comparable over time to facilitate scientific discovery and trustworthy refinement. This paper proposes a reproducible scientific workflow for developing, deploying, and analyzing online AI decision-making algorithms in digital health interventions. Grounded in practical experience from multiple real-world deployments, this workflow addresses key challenges to reproducibility across all phases of the online AI algorithm development life-cycle.},
+  selected={false}
+}
+
 @article{monitoring2025,
   abbr={Bandit/RL Algorithms},
   bibtex_show={true},
@@ -13,18 +38,6 @@
   selected={false}
 }
 
-
-@article{psarContext2025,
-  abbr={Bandit/RL Algorithms},
-  bibtex_show={true},
-  title={Contextual Thompson Sampling via Generation of Missing Data},
-  author={Zhang, Kelly W and Cai, Tiffany (Tianhui) and Namkoong, Hongseok and Russo, Daniel},
-  journal={Under submission},
-  year={2025},
-  pdf={https://arxiv.org/abs/2502.07064},
-  abstract={We introduce a framework for Thompson sampling contextual bandit algorithms, in which the algorithm's ability to quantify uncertainty and make decisions depends on the quality of a generative model that is learned offline. Instead of viewing uncertainty in the environment as arising from unobservable latent parameters, our algorithm treats uncertainty as stemming from missing, but potentially observable, future outcomes. If these future outcomes were all observed, one could simply make decisions using an "oracle" policy fit on the complete dataset. Inspired by this conceptualization, at each decision-time, our algorithm uses a generative model to probabilistically impute missing future outcomes, fits a policy using the imputed complete dataset, and uses that policy to select the next action. We formally show that this algorithm is a generative formulation of Thompson Sampling and prove a state-of-the-art regret bound for it. Notably, our regret bound i) depends on the probabilistic generative model only through the quality of its offline prediction loss, and ii) applies to any method of fitting the "oracle" policy, which easily allows one to adapt Thompson sampling to decision-making settings with fairness and/or resource constraints.},
-  selected={true}
-}
 
 @article{impatientBandits2025,
   abbr={Bandit/RL Algorithms},
@@ -71,7 +84,7 @@ Our approach rests on viewing uncertainty as arising from missing future outcome
   bibtex_show={true},
   title={A Deployed Online Reinforcement Learning Algorithm In An Oral Health Clinical Trial},
   author={Trella, Anna L and Zhang, Kelly W and Jajal, Hinal and  Nahum-Shani, Inbal and Shetty, Vivek and Doshi-Velez, Finale and Murphy, Susan A},
-  journal={Proceedings of the AAAI Conference on Artificial Intelligence (to appear)},
+  journal={Proceedings of the AAAI Conference on Artificial Intelligence},
   year={2025},
   pdf={https://arxiv.org/abs/2409.02069},
   abstract={Dental disease is a prevalent chronic condition associated with substantial financial burden, personal suffering, and increased risk of systemic diseases. Despite widespread recommendations for twice-daily tooth brushing, adherence to recommended oral self-care behaviors remains sub-optimal due to factors such as forgetfulness and disengagement. To address this, we developed Oralytics, a mHealth intervention system designed to complement clinician-delivered preventative care for marginalized individuals at risk for dental disease. Oralytics incorporates an online reinforcement learning algorithm to determine optimal times to deliver intervention prompts that encourage oral self-care behaviors. We have deployed Oralytics in a registered clinical trial. The deployment required careful design to manage challenges specific to the clinical trials setting in the U.S. In this paper, we (1) highlight key design decisions of the RL algorithm that address these challenges and (2) conduct a re-sampling analysis to evaluate algorithm design decisions. A second phase (randomized control trial) of Oralytics is planned to start in spring 2025.},

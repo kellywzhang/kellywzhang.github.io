@@ -15,8 +15,8 @@ profile:
     <!--<p>[<a href="https://github.com/kellywzhang">Github</a>]</p>-->
     <!--<p>Office: <a href="https://www.imperial.ac.uk/i-hub/find-i-hub">I-HUB</a> Level 5</p>-->
     <p><a href="https://scholar.google.com/citations?user=8jlpWFAAAAAJ&hl=en">Google Scholar</a></p>,
-    <p><a href="assets/pdf/kellywzhang_CV.pdf" target="_blank" rel="noopener noreferrer">CV (Feb 2025)</a></p>,
-    <p><a href="https://twitter.com/kewzha">"Twitter"</a></p>
+    <p><a href="assets/pdf/kellywzhang_CV.pdf" target="_blank" rel="noopener noreferrer">CV (Sept 2025)</a></p>,
+    <p><a href="https://twitter.com/kewzha">Twitter</a></p>
     <br>
     </center>
 
@@ -36,7 +36,8 @@ latest_posts:
 
 ---
 
-I am an Assistant Professor at <a href="https://www.imperial.ac.uk/" target="_blank" rel="noopener noreferrer">Imperial College London</a> in the Mathematics Department (statistics section). I am also a faculty member in the <a href="https://ix.imperial.ac.uk/" target="_blank" rel="noopener noreferrer">I-X</a>, an interdisciplinary AI initiative at Imperial.
+I am an Assistant Professor at <a href="https://www.imperial.ac.uk/" target="_blank" rel="noopener noreferrer">Imperial College London</a> in the Mathematics Department (statistics section). 
+<!--I am also a faculty member in the <a href="https://ix.imperial.ac.uk/" target="_blank" rel="noopener noreferrer">I-X</a>, an interdisciplinary AI initiative at Imperial.-->
 My research interests lie at the intersection of <em>adaptive experimentation</em>, <em>reinforcement learning</em>, and <em>statistical inference</em>.
 
 I previously was a Postdoctoral Fellow at <a href="https://business.columbia.edu/" target="_blank" rel="noopener noreferrer">Columbia Business School</a> in the Descision, Risk, and Optimization group, working with <a href="https://djrusso.github.io/" target="_blank" rel="noopener noreferrer">Daniel Russo</a> and <a href="https://hsnamkoong.github.io/">Hongseok Namkoong</a>.
