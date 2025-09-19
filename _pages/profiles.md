@@ -1,28 +1,35 @@
 ---
 layout: profiles
-permalink: /people/
-title: people
-description: members of the lab or group
+permalink: /group/
+title: Group
+description: 
 nav: true
 nav_order: 7
 
 profiles:
-  # if you want to include more than one profile, just replicate the following block
-  # and create one content file for each profile inside _pages/
-  - align: right
-    image: prof_pic.jpg
-    content: about_einstein.md
-    image_circular: false # crops the image to make it circular
-    more_info: >
-      <p>555 your office number</p>
-      <p>123 your address street</p>
-      <p>Your City, State 12345</p>
   - align: left
-    image: prof_pic.jpg
-    content: about_einstein.md
-    image_circular: false # crops the image to make it circular
-    more_info: >
-      <p>555 your office number</p>
-      <p>123 your address street</p>
-      <p>Your City, State 12345</p>
+    image: lab/Chih-Yu-Chang.jpg
+    image_circular: false
+    name: Chih-Yu Chang
+    department: Ph.D. student (incoming in fall)
+    link: "https://cchihyu.github.io/"
+  - align: left
+    image: lab/James-Widdowson.jpg 
+    image_circular: 
+    name: James Widdowson 
+    department: Masters Student
+    link: "https://www.linkedin.com/in/james-widdowson-28b9271ab/?originalSubdomain=uk"
+  - align: left
+    image: lab/Lai-Wei-Siang.jpg
+    image_circular: false
+    name: Lai Wei Siang
+    department: UROP student
+    link: "https://www.linkedin.com/in/lai-wei-siang-ba2160242/?originalSubdomain=uk"
+  - align: left
+    image: lab/Bennie-Feng.jpg 
+    image_circular: false
+    name: Bennie Feng
+    department: UROP student
+    link: "https://www.linkedin.com/in/bennie-feng-aa10642aa/?originalSubdomain=uk"
+
 ---
