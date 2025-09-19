@@ -23,6 +23,17 @@ profile:
 news: true # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: false # includes social icons at the bottom of the page
+
+announcements:
+  enabled: true # includes a list of news items
+  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
+  limit: 10 # leave blank to include all the news in the `_news` folder
+
+latest_posts:
+  enabled: false
+  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
+  limit: 3 # leave blank to include all the blog posts
+
 ---
 
 I am an Assistant Professor at <a href="https://www.imperial.ac.uk/" target="_blank" rel="noopener noreferrer">Imperial College London</a> in the Mathematics Department (statistics section). I am also a faculty member in the <a href="https://ix.imperial.ac.uk/" target="_blank" rel="noopener noreferrer">I-X</a>, an interdisciplinary AI initiative at Imperial.

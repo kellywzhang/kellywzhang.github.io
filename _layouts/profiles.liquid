@@ -4,9 +4,11 @@ layout: page
 <div class="post">
   <article>
     {% if page.profiles %}
+    <div class="container">
+      <div class="row justify-content-center">
+      <div style="display: flex; flex-wrap: wrap; gap: 30px;">
       {% for profile in page.profiles %}
-        <hr>
-        <div class="profile float-{% if profile.align == 'left' %}left{% else %}right{% endif %}">
+        <div class="profile text-center">
           {% if profile.image %}
             {% assign profile_image_path = profile.image | prepend: 'assets/img/' %}
             {% if profile.image_circular %}
@@ -29,15 +31,10 @@ layout: page
           {% endif %}
         </div>
 
-        <div class="clearfix">
-          {% if profile.content %}
-            {% capture profile_content %}{% include_relative {{ profile.content }} %}{% endcapture %}
-            {{ profile_content | markdownify }}
-          {% else %}
-            {{ content }}
-          {% endif %}
-        </div>
       {% endfor %}
+    </div>
+    </div>
+    </div>
     {% endif %}
   </article>
 </div>
