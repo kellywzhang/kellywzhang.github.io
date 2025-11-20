@@ -52,17 +52,6 @@ ninja.data = [{
             window.open("https://blog.google/technology/ai/google-gemini-update-flash-ai-assistant-io-2024/", "_blank");
           
         },
-      },{id: "post-displaying-external-posts-on-your-al-folio-blog",
-        
-          title: 'Displaying External Posts on Your al-folio Blog <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
-        
-        description: "",
-        section: "Posts",
-        handler: () => {
-          
-            window.open("https://medium.com/@al-folio/displaying-external-posts-on-your-al-folio-blog-b60a1d241a0a?source=rss-17feae71c3c4------2", "_blank");
-          
-        },
       },{id: "books-the-godfather",
           title: 'The Godfather',
           description: "",
@@ -95,8 +84,8 @@ ninja.data = [{
           section: "News",},{id: "news-i-will-attend-rldm-and-have-an-oral-presentation-on-our-work-on-exploration-via-generation-of-missing-data-see-here-and-here",
           title: 'I will attend RLDM and have an oral presentation on our work on...',
           description: "",
-          section: "News",},{id: "news-i-attend-the-apple-health-research-summit",
-          title: 'I attend the Apple Health Research Summit!',
+          section: "News",},{id: "news-i-will-attend-the-apple-health-research-summit",
+          title: 'I will attend the Apple Health Research Summit!',
           description: "",
           section: "News",},{id: "news-i-will-be-in-atlanta-for-ieee-embs-2025-conference-on-biomedial-and-health-informatics-i-will-be-speaking-in-a-session-on-timely-health-support-outside-the-clinic-organized-by-asim-gazi",
           title: 'I will be in Atlanta for IEEE-EMBS 2025 Conference on Biomedial and Health...',
