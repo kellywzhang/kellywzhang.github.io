@@ -1423,3 +1423,28 @@ figure.cover {
     color: #23212d !important;
   }
 }
+
+/* Full-Width CSS for an element inside a constrained container */
+.full-width-figure {
+    /* 1. Remove default margins */
+    margin: 0; 
+    
+    /* 2. Set the width to 100% of the viewport (browser window) */
+    width: 500px; 
+    
+    /* 3. Push the element to the left edge of the viewport.
+          '50%' is the center of the parent.
+          '-50vw' is the center of the viewport.
+          Putting them together aligns the left edges of the two centers. */
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* 4. Ensure the image inside scales correctly */
+.full-width-figure img {
+    width: 100%;
+    height: auto;
+    display: block; 
+}
+
