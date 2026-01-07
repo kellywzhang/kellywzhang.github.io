@@ -12,11 +12,11 @@ profile:
     <center>
     <p>kelly.zhang@imperial.ac.uk</p>
     <br>
-    <!--<p>[<a href="https://github.com/kellywzhang">Github</a>]</p>-->
-    <!--<p>Office: <a href="https://www.imperial.ac.uk/i-hub/find-i-hub">I-HUB</a> Level 5</p>-->
-    <p><a href="https://scholar.google.com/citations?user=8jlpWFAAAAAJ&hl=en">Google Scholar</a></p>,
-    <p><a href="assets/pdf/kellywzhang_CV.pdf" target="_blank" rel="noopener noreferrer">CV (Sept 2025)</a></p>,
-    <p><a href="https://twitter.com/kewzha">Twitter</a></p>
+    <p>[<a href="https://scholar.google.com/citations?user=8jlpWFAAAAAJ&hl=en">Google Scholar</a>]</p>
+    <p>[<a href="https://github.com/kellywzhang">Github</a>]</p>
+    <p>[<a href="assets/pdf/kellywzhang_CV.pdf" target="_blank" rel="noopener noreferrer">CV (Jan 2026)</a>]</p>
+    <p>Office: <a href="https://www.imperial.ac.uk/i-hub/find-i-hub">I-HUB</a> Room 5.03</p>
+    <!--<p><a href="https://twitter.com/kewzha">Twitter</a></p>-->
     <br>
     </center>
 
