@@ -15,13 +15,6 @@ profiles:
     link: "https://cchihyu.github.io/"
     coadvisor: Co-advised with Andrew Duncan
   - align: left
-    image: lab/James-Widdowson.jpg 
-    image_circular: 
-    name: James Widdowson 
-    department: Ph.D. student (StatML CDT)
-    link: "https://www.linkedin.com/in/james-widdowson-28b9271ab/?originalSubdomain=uk"
-    coadvisor: Co-advised with Ciara Pike-Burke
-  - align: left
     image: lab/Dillon-Vijaya.jpg 
     image_circular: 
     name: Dillon Vijaya
@@ -43,4 +36,11 @@ profiles:
     link: "https://www.linkedin.com/in/bennie-feng-aa10642aa/?originalSubdomain=uk"
     coadvisor: 
 
+ # - align: left
+ #   image: lab/James-Widdowson.jpg 
+ #   image_circular: 
+ #   name: James Widdowson 
+ #   department: Ph.D. student (StatML CDT)
+ #   link: "https://www.linkedin.com/in/james-widdowson-28b9271ab/?originalSubdomain=uk"
+ #   coadvisor: Co-advised with Ciara Pike-Burke
 ---
