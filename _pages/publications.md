@@ -19,13 +19,13 @@ nav_order: 2
 <img src="/assets/img/projects/heartcounts.png" alt="myheartcounts">
 </figure>
 
-<br/> <br/>
+<!--<br/> <br/>
 <h4>Decision Support Tool for Neonatal Care</h4>
 <p>My group is collaborating with the <a href="https://www.imperial.ac.uk/neonatal-data-analysis-unit/neonatal-data-analysis-unit/">Neonatal Data Analysis Unit</a> at Imperial to develop decision support tools for early prediction of critical conditions, such as necrotising enterocolitis. Our work utilizes the <a href="https://www.hdruk.ac.uk/about-us/involving-and-engaging-patients-and-the-public/get-involved/your-data-in-action/the-national-neonatal-research-database-making-faster-safer-and-more-efficient-improvements-to-neonatal-healthcare/">National Neonatal Research Database</a>, which aggregates electronic health record data from all neonatal units across the UK, comprised of over 1.6 million patients and growing. Our research investigates methods to leverage this massive longitudinal dataset to develop AI models for providing actionable support and insights.</p>
 
 <figure class="full-width-figure">
 <img src="/assets/img/projects/neonatal.png" alt="neonatal">
-</figure>
+</figure>-->
 
 <br/> <br/>
 <h2>Papers</h2>
