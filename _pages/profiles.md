@@ -13,14 +13,21 @@ profiles:
     name: Chih-Yu Chang
     department: Ph.D. student (Math department)
     link: "https://cchihyu.github.io/"
-    coadvisor: Co-advised with Andrew Duncan
+    coadvisor: 
   - align: left
-    image: lab/Dillon-Vijaya.jpg 
-    image_circular: 
-    name: Dillon Vijaya
-    department: Ph.D. student (AI4Health CDT)
-    link: "https://www.linkedin.com/in/dillon-vijaya-599071192/?originalSubdomain=uk"
-    coadvisor: Co-advised with Dennis Wang and Neena Modi
+    image: lab/Susanna-Paoli.jpg
+    image_circular: false
+    name: Susanna Paoli
+    department: Ph.D. student (StatML CDT)
+    link: "https://susannapaoli.com/"
+    coadvisor: 
+#  - align: left
+#    image: lab/dillon-vijaya.jpg 
+#    image_circular: 
+#    name: dillon vijaya
+#    department: ph.d. student (ai4health cdt)
+#    link: "https://www.linkedin.com/in/dillon-vijaya-599071192/?originalsubdomain=uk"
+#    coadvisor: co-advised with dennis wang and neena modi
   - align: left
     image: lab/Lai-Wei-Siang.jpg
     image_circular: false
