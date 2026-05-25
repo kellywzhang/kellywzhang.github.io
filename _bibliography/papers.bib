@@ -31,7 +31,7 @@ Trial Status: Recruitment commenced in March 2026 and is ongoing.},
   arxiv={2601.22259},
   pdf={https://arxiv.org/abs/2601.22259},
   abstract={While tabular foundation models have achieved remarkable success in classification and regression, adapting them to model time-to-event outcomes for survival analysis is non-trivial due to right-censoring, where data observations may end before the event occurs. We develop a classification-based framework that reformulates both static and dynamic survival analysis as a series of binary classification problems by discretizing event times. Censored observations are naturally handled as examples with missing labels at certain time points. This classification formulation enables existing tabular foundation models to perform survival analysis through in-context learning without explicit training. We prove that under standard censoring assumptions, minimizing our binary classification loss recovers the true survival probabilities as the training set size increases. We demonstrate through evaluation across 53 real-world datasets that off-the-shelf tabular foundation models with this classification formulation outperform classical and deep learning baselines on average over multiple survival metrics.},
-  selected={true}
+  selected={false}
 }
 
 @article{statRL2026,
@@ -39,7 +39,7 @@ Trial Status: Recruitment commenced in March 2026 and is ongoing.},
   bibtex_show={true},
   title={Statistical Reinforcement Learning in the Real World: A Survey of Challenges and Future Directions},
   author={Gazi, Asim H. and Guo, Yongyi and Gao, Daiqi and Xu, Ziping and Zhang, Kelly W. and Murphy, Susan A.},
-  journal={Under submission},
+  journal={Major Revision at Annals of Applied Statistics},
   year={2026},
   arxiv={2601.15353},
   pdf={https://arxiv.org/abs/2601.15353},
@@ -67,10 +67,23 @@ In this paper, we frame the application of RL in practice as a three-component p
   title={Replicable Bandits for Digital Health Interventions},
   author={Zhang, Kelly W. and Closser, Nowell and Trella, Anna L. and Murphy, Susan A.}, 
   journal={Statistical Science},
-  year={2026},
+  year={2025},
   pdf={http://dx.doi.org/10.1214/25-STS1017},
   arxiv={2407.15377},
   abstract={Adaptive treatment assignment algorithms, such as bandit and reinforcement learning algorithms, are increasingly used in digital health intervention clinical trials. Causal inference and related data analyses are critical for evaluating digital health interventions, deciding how to refine the intervention, and deciding whether to roll-out the intervention more broadly. However the replicability of these analyses has received relatively little attention. This work investigates the replicability of statistical analyses from trials deploying adaptive treatment assignment algorithms. We demonstrate that many standard statistical estimators can be inconsistent and fail to be replicable across repetitions of the clinical trial, even as the sample size grows large. We show that this non-replicability is intimately related to properties of the adaptive algorithm itself. We introduce a formal definition of a "replicable bandit algorithm" and prove that under such algorithms, a wide variety of common statistical analyses are guaranteed to be consistent. We present both theoretical results and simulation studies based on a mobile health oral health self-care intervention. Our findings underscore the importance of designing adaptive algorithms with replicability in mind, especially for settings like digital health where deployment decisions rely heavily on replicated evidence. We conclude by discussing open questions on the connections between algorithm design, statistical inference, and experimental replicability.},
+  selected={false}
+}
+
+@article{reproducible2026,
+  abbr={Bandits/RL},
+  bibtex_show={true},
+  title={Reproducible workflow for online AI in digital health},
+  author={Ghosh, Susobhan and Gulapalli, Bhanu T. and Gao, Daiqi and Gazi, Asim and Trella, Anna and Xu, Ziping and Zhang, Kelly W. and Murphy, Susan A.},
+  journal={To appear in Philosophical Transactions A},
+  year={2026},
+  arxiv={2509.13499},
+  pdf={https://arxiv.org/abs/2509.13499},
+  abstract={Online artificial intelligence (AI) algorithms are an important component of digital health interventions. These online algorithms are designed to continually learn and improve their performance as streaming data is collected on individuals. Deploying online AI presents a key challenge: balancing adaptability of online AI with reproducibility. Online AI in digital interventions is a rapidly evolving area, driven by advances in algorithms, sensors, software, and devices. Digital health intervention development and deployment is a continuous process, where implementation - including the AI decision-making algorithm - is interspersed with cycles of re-development and optimization. Each deployment informs the next, making iterative deployment a defining characteristic of this field. This iterative nature underscores the importance of reproducibility: data collected across deployments must be accurately stored to have scientific utility, algorithm behavior must be auditable, and results must be comparable over time to facilitate scientific discovery and trustworthy refinement. This paper proposes a reproducible scientific workflow for developing, deploying, and analyzing online AI decision-making algorithms in digital health interventions. Grounded in practical experience from multiple real-world deployments, this workflow addresses key challenges to reproducibility across all phases of the online AI algorithm development life-cycle.},
   selected={false}
 }
 
@@ -88,26 +101,13 @@ In this paper, we frame the application of RL in practice as a three-component p
 }
 
 
-@article{reproducible2025,
-  abbr={Bandits/RL},
-  bibtex_show={true},
-  title={Reproducible workflow for online AI in digital health},
-  author={Ghosh, Susobhan and Gulapalli, Bhanu T. and Gao, Daiqi and Gazi, Asim and Trella, Anna and Xu, Ziping and Zhang, Kelly W. and Murphy, Susan A.},
-  journal={Philosophical Transactions A},
-  year={2025},
-  arxiv={2509.13499},
-  pdf={https://arxiv.org/abs/2509.13499},
-  abstract={Online artificial intelligence (AI) algorithms are an important component of digital health interventions. These online algorithms are designed to continually learn and improve their performance as streaming data is collected on individuals. Deploying online AI presents a key challenge: balancing adaptability of online AI with reproducibility. Online AI in digital interventions is a rapidly evolving area, driven by advances in algorithms, sensors, software, and devices. Digital health intervention development and deployment is a continuous process, where implementation - including the AI decision-making algorithm - is interspersed with cycles of re-development and optimization. Each deployment informs the next, making iterative deployment a defining characteristic of this field. This iterative nature underscores the importance of reproducibility: data collected across deployments must be accurately stored to have scientific utility, algorithm behavior must be auditable, and results must be comparable over time to facilitate scientific discovery and trustworthy refinement. This paper proposes a reproducible scientific workflow for developing, deploying, and analyzing online AI decision-making algorithms in digital health interventions. Grounded in practical experience from multiple real-world deployments, this workflow addresses key challenges to reproducibility across all phases of the online AI algorithm development life-cycle.},
-  selected={false}
-}
-
-@article{monitoring2025,
+@article{monitoring2026,
   abbr={Bandits/RL},
   bibtex_show={true},
   title={Effective Monitoring of Online Decision-Making Algorithms in Digital Intervention Implementation},
   author={Trella*, Anna L. and Ghosh*, Susobhan and Bonar, Erin E. and Coughlin, Lara and Doshi-Velez, Finale and Guo, Yongyi and Hung, Pei-Yao and Nahum-Shani, Inbal and Shetty, Vivek and Walton, Maureen and Yan, Iris and Zhang, Kelly W. and Murphy, Susan A.},
-  journal={Under submission},
-  year={2025},
+  journal={To appear in npj Digital Medicine},
+  year={2026},
   arxiv={2409.10526},
   pdf={https://arxiv.org/abs/2409.10526},
   abstract={Online AI decision-making algorithms are increasingly used by digital interventions to dynamically personalize treatment to individuals. These algorithms determine, in real-time, the delivery of treatment based on accruing data. The objective of this paper is to provide guidelines for enabling effective monitoring of online decision-making algorithms with the goal of (1) safeguarding individuals and (2) ensuring data quality. We elucidate guidelines and discuss our experience in monitoring online decision-making algorithms in two digital intervention clinical trials (Oralytics and MiWaves). Our guidelines include (1) developing fallback methods, pre-specified procedures executed when an issue occurs, and (2) identifying potential issues categorizing them by severity (red, yellow, and green). Across both trials, the monitoring systems detected real-time issues such as out-of-memory issues, database timeout, and failed communication with an external source. Fallback methods prevented participants from not receiving any treatment during the trial and also prevented the use of incorrect data in statistical analyses. These trials provide case studies for how health scientists can build monitoring systems for their digital intervention. Without these algorithm monitoring systems, critical issues would have gone undetected and unresolved. Instead, these monitoring systems safeguarded participants and ensured the quality of the resulting data for updating the intervention and facilitating scientific discovery. These monitoring guidelines and findings give digital intervention teams the confidence to include online decision-making algorithms in digital interventions.},
@@ -120,7 +120,7 @@ In this paper, we frame the application of RL in practice as a three-component p
   bibtex_show={true},
   title={Impatient Bandits: Optimizing for the Long-Term Without Delay},
   author={Zhang, Kelly W. and Baldwin-McDonald, Thomas and Ciosek, Kamil and Maystre, Lucas and Russo, Daniel},
-  journal={To appear in Journal of Machine Learning},
+  journal={To appear in Journal of Machine Learning (JMLR)},
   year={2025},
   pdf={https://arxiv.org/abs/2501.07761},
   arxiv={2501.07761},
