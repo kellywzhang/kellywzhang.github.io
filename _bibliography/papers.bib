@@ -1,5 +1,18 @@
 ---
 ---
+@article{banditSimulationInference2026,
+  abbr={Bandits/RL},
+  bibtex_show={true},
+  title={Bandit Simulation for Average Reward Inference},
+  author={Praharaj, Samya and Chang, Chih-Yu and Khamaru, Koulik and Zhang, Kelly W.},
+  journal={Under submission},
+  year={2026},
+  arxiv={2606.00913},
+  pdf={https://arxiv.org/abs/2606.00913},
+  abstract={Multi-arm bandit algorithms are increasingly used in online platforms, clinical trials, and social science experiments, but valid statistical inference on their performance remains an open challenge. After deploying bandits, a natural question is whether one can construct a confidence interval for its mean reward and assess whether it reliably outperforms a baseline policy. The total reward achieved in any single bandit deployment is random, and deploying a bandit twice on the same population typically yields different reward trajectories due to stochastic rewards. Standard statistical inference methods cannot be used because bandit algorithms introduce complex dependencies in the collected data, which violate the i.i.d. assumption underlying many classical approaches. Moreover, existing inference methods for adaptively collected data only apply to estimands that do not depend on the data-collection algorithm (such as the mean reward under a fixed action). We propose Bandit Simulation for Inference (BSI), a framework that fits a simulator of the bandit environment from observed data--either on-policy or off-policy--and uses it to estimate the mean reward under any evaluation policy, including adaptive blackbox algorithms. BSI formally propagates uncertainty in the estimated simulator parameters into the confidence interval construction. Furthermore, for BSI to be valid, it requires only weak exploration assumptions on the behavior policy and avoids importance weighting. We prove that BSI yields asymptotically valid confidence intervals, and demonstrate empirically that it maintains nominal coverage in settings where standard off-policy evaluation methods fail.},
+  selected={true}
+}
+
 @article{MHC2026,
   abbr={Health AI},
   bibtex_show={true},
@@ -31,7 +44,7 @@ Trial Status: Recruitment commenced in March 2026 and is ongoing.},
   arxiv={2601.22259},
   pdf={https://arxiv.org/abs/2601.22259},
   abstract={While tabular foundation models have achieved remarkable success in classification and regression, adapting them to model time-to-event outcomes for survival analysis is non-trivial due to right-censoring, where data observations may end before the event occurs. We develop a classification-based framework that reformulates both static and dynamic survival analysis as a series of binary classification problems by discretizing event times. Censored observations are naturally handled as examples with missing labels at certain time points. This classification formulation enables existing tabular foundation models to perform survival analysis through in-context learning without explicit training. We prove that under standard censoring assumptions, minimizing our binary classification loss recovers the true survival probabilities as the training set size increases. We demonstrate through evaluation across 53 real-world datasets that off-the-shelf tabular foundation models with this classification formulation outperform classical and deep learning baselines on average over multiple survival metrics.},
-  selected={false}
+  selected={true}
 }
 
 @article{statRL2026,
@@ -61,45 +74,18 @@ In this paper, we frame the application of RL in practice as a three-component p
   selected={false}
 }
 
-@article{replicableBandits2026,
-  abbr={Statistical Inference},
-  bibtex_show={true},
-  title={Replicable Bandits for Digital Health Interventions},
-  author={Zhang, Kelly W. and Closser, Nowell and Trella, Anna L. and Murphy, Susan A.}, 
-  journal={Statistical Science},
-  year={2025},
-  pdf={http://dx.doi.org/10.1214/25-STS1017},
-  arxiv={2407.15377},
-  abstract={Adaptive treatment assignment algorithms, such as bandit and reinforcement learning algorithms, are increasingly used in digital health intervention clinical trials. Causal inference and related data analyses are critical for evaluating digital health interventions, deciding how to refine the intervention, and deciding whether to roll-out the intervention more broadly. However the replicability of these analyses has received relatively little attention. This work investigates the replicability of statistical analyses from trials deploying adaptive treatment assignment algorithms. We demonstrate that many standard statistical estimators can be inconsistent and fail to be replicable across repetitions of the clinical trial, even as the sample size grows large. We show that this non-replicability is intimately related to properties of the adaptive algorithm itself. We introduce a formal definition of a "replicable bandit algorithm" and prove that under such algorithms, a wide variety of common statistical analyses are guaranteed to be consistent. We present both theoretical results and simulation studies based on a mobile health oral health self-care intervention. Our findings underscore the importance of designing adaptive algorithms with replicability in mind, especially for settings like digital health where deployment decisions rely heavily on replicated evidence. We conclude by discussing open questions on the connections between algorithm design, statistical inference, and experimental replicability.},
-  selected={false}
-}
-
 @article{reproducible2026,
   abbr={Bandits/RL},
   bibtex_show={true},
   title={Reproducible workflow for online AI in digital health},
   author={Ghosh, Susobhan and Gulapalli, Bhanu T. and Gao, Daiqi and Gazi, Asim and Trella, Anna and Xu, Ziping and Zhang, Kelly W. and Murphy, Susan A.},
-  journal={To appear in Philosophical Transactions A},
+  journal={Philosophical Transactions A},
   year={2026},
   arxiv={2509.13499},
-  pdf={https://arxiv.org/abs/2509.13499},
+  pdf={https://royalsocietypublishing.org/rsta/article/384/2321/20240607/481923/Reproducible-workflow-for-online-artificial},
   abstract={Online artificial intelligence (AI) algorithms are an important component of digital health interventions. These online algorithms are designed to continually learn and improve their performance as streaming data is collected on individuals. Deploying online AI presents a key challenge: balancing adaptability of online AI with reproducibility. Online AI in digital interventions is a rapidly evolving area, driven by advances in algorithms, sensors, software, and devices. Digital health intervention development and deployment is a continuous process, where implementation - including the AI decision-making algorithm - is interspersed with cycles of re-development and optimization. Each deployment informs the next, making iterative deployment a defining characteristic of this field. This iterative nature underscores the importance of reproducibility: data collected across deployments must be accurately stored to have scientific utility, algorithm behavior must be auditable, and results must be comparable over time to facilitate scientific discovery and trustworthy refinement. This paper proposes a reproducible scientific workflow for developing, deploying, and analyzing online AI decision-making algorithms in digital health interventions. Grounded in practical experience from multiple real-world deployments, this workflow addresses key challenges to reproducibility across all phases of the online AI algorithm development life-cycle.},
   selected={false}
 }
-
-@article{psarContext2025,
-  abbr={Bandits/RL},
-  bibtex_show={true},
-  title={Contextual Thompson Sampling via Generation of Missing Data},
-  author={Zhang, Kelly W. and Cai, Tiffany (Tianhui) and Namkoong, Hongseok and Russo, Daniel},
-  journal={Advances in Neural Information Processing Systems (NeurIPS)},
-  year={2025},
-  arxiv={2502.07064},
-  pdf={https://neurips.cc/virtual/2025/loc/san-diego/poster/119009},
-  abstract={We introduce a framework for Thompson sampling contextual bandit algorithms, in which the algorithm's ability to quantify uncertainty and make decisions depends on the quality of a generative model that is learned offline. Instead of viewing uncertainty in the environment as arising from unobservable latent parameters, our algorithm treats uncertainty as stemming from missing, but potentially observable, future outcomes. If these future outcomes were all observed, one could simply make decisions using an "oracle" policy fit on the complete dataset. Inspired by this conceptualization, at each decision-time, our algorithm uses a generative model to probabilistically impute missing future outcomes, fits a policy using the imputed complete dataset, and uses that policy to select the next action. We formally show that this algorithm is a generative formulation of Thompson Sampling and prove a state-of-the-art regret bound for it. Notably, our regret bound i) depends on the probabilistic generative model only through the quality of its offline prediction loss, and ii) applies to any method of fitting the "oracle" policy, which easily allows one to adapt Thompson sampling to decision-making settings with fairness and/or resource constraints.},
-  selected={true}
-}
-
 
 @article{monitoring2026,
   abbr={Bandits/RL},
@@ -115,18 +101,47 @@ In this paper, we frame the application of RL in practice as a three-component p
 }
 
 
-@article{impatientBandits2025,
+@article{impatientBandits2026,
   abbr={Bandits/RL},
   bibtex_show={true},
   title={Impatient Bandits: Optimizing for the Long-Term Without Delay},
   author={Zhang, Kelly W. and Baldwin-McDonald, Thomas and Ciosek, Kamil and Maystre, Lucas and Russo, Daniel},
   journal={To appear in Journal of Machine Learning (JMLR)},
-  year={2025},
+  year={2026},
   pdf={https://arxiv.org/abs/2501.07761},
   arxiv={2501.07761},
   abstract={Increasingly, recommender systems are tasked with improving users' long-term satisfaction. In this context, we study a content exploration task, which we formalize as a bandit problem with delayed rewards. There is an apparent trade-off in choosing the learning signal: waiting for the full reward to become available might take several weeks, slowing the rate of learning, whereas using short-term proxy rewards reflects the actual long-term goal only imperfectly. First, we develop a predictive model of delayed rewards that incorporates all information obtained to date. Rewards as well as shorter-term surrogate outcomes are combined through a Bayesian filter to obtain a probabilistic belief. Second, we devise a bandit algorithm that quickly learns to identify content aligned with long-term success using this new predictive model. We prove a regret bound for our algorithm that depends on the Value of Progressive Feedback, an information theoretic metric that captures the quality of short-term leading indicators that are observed prior to the long-term reward. We apply our approach to a podcast recommendation problem, where we seek to recommend shows that users engage with repeatedly over two months. We empirically validate that our approach significantly outperforms methods that optimize for short-term proxies or rely solely on delayed rewards, as demonstrated by an A/B test in a recommendation system that serves hundreds of millions of users.},
   selected={true}
 }
+
+@article{replicableBandits2025,
+  abbr={Statistical Inference},
+  bibtex_show={true},
+  title={Replicable Bandits for Digital Health Interventions},
+  author={Zhang, Kelly W. and Closser, Nowell and Trella, Anna L. and Murphy, Susan A.}, 
+  journal={Statistical Science},
+  year={2025},
+  pdf={http://dx.doi.org/10.1214/25-STS1017},
+  arxiv={2407.15377},
+  abstract={Adaptive treatment assignment algorithms, such as bandit and reinforcement learning algorithms, are increasingly used in digital health intervention clinical trials. Causal inference and related data analyses are critical for evaluating digital health interventions, deciding how to refine the intervention, and deciding whether to roll-out the intervention more broadly. However the replicability of these analyses has received relatively little attention. This work investigates the replicability of statistical analyses from trials deploying adaptive treatment assignment algorithms. We demonstrate that many standard statistical estimators can be inconsistent and fail to be replicable across repetitions of the clinical trial, even as the sample size grows large. We show that this non-replicability is intimately related to properties of the adaptive algorithm itself. We introduce a formal definition of a "replicable bandit algorithm" and prove that under such algorithms, a wide variety of common statistical analyses are guaranteed to be consistent. We present both theoretical results and simulation studies based on a mobile health oral health self-care intervention. Our findings underscore the importance of designing adaptive algorithms with replicability in mind, especially for settings like digital health where deployment decisions rely heavily on replicated evidence. We conclude by discussing open questions on the connections between algorithm design, statistical inference, and experimental replicability.},
+  selected={false}
+}
+
+
+
+@article{psarContext2025,
+  abbr={Bandits/RL},
+  bibtex_show={true},
+  title={Contextual Thompson Sampling via Generation of Missing Data},
+  author={Zhang, Kelly W. and Cai, Tiffany (Tianhui) and Namkoong, Hongseok and Russo, Daniel},
+  journal={Advances in Neural Information Processing Systems (NeurIPS)},
+  year={2025},
+  arxiv={2502.07064},
+  pdf={https://neurips.cc/virtual/2025/loc/san-diego/poster/119009},
+  abstract={We introduce a framework for Thompson sampling contextual bandit algorithms, in which the algorithm's ability to quantify uncertainty and make decisions depends on the quality of a generative model that is learned offline. Instead of viewing uncertainty in the environment as arising from unobservable latent parameters, our algorithm treats uncertainty as stemming from missing, but potentially observable, future outcomes. If these future outcomes were all observed, one could simply make decisions using an "oracle" policy fit on the complete dataset. Inspired by this conceptualization, at each decision-time, our algorithm uses a generative model to probabilistically impute missing future outcomes, fits a policy using the imputed complete dataset, and uses that policy to select the next action. We formally show that this algorithm is a generative formulation of Thompson Sampling and prove a state-of-the-art regret bound for it. Notably, our regret bound i) depends on the probabilistic generative model only through the quality of its offline prediction loss, and ii) applies to any method of fitting the "oracle" policy, which easily allows one to adapt Thompson sampling to decision-making settings with fairness and/or resource constraints.},
+  selected={true}
+}
+
 
 
 @article{obesityRL2025,
@@ -141,6 +156,18 @@ In this paper, we frame the application of RL in practice as a three-component p
   selected={false}
 }
 
+@article{trella2025monitoring,
+  abbr={Bandits/RL},
+  bibtex_show={true},
+  title={A Deployed Online Reinforcement Learning Algorithm In An Oral Health Clinical Trial},
+  author={Trella, Anna L and Zhang, Kelly W. and Jajal, Hinal and  Nahum-Shani, Inbal and Shetty, Vivek and Doshi-Velez, Finale and Murphy, Susan A},
+  journal={Proceedings of the AAAI Conference on Artificial Intelligence},
+  year={2025},
+  arxiv={2409.02069},
+  pdf={https://dl.acm.org/doi/10.1609/aaai.v39i28.35143},
+  abstract={Dental disease is a prevalent chronic condition associated with substantial financial burden, personal suffering, and increased risk of systemic diseases. Despite widespread recommendations for twice-daily tooth brushing, adherence to recommended oral self-care behaviors remains sub-optimal due to factors such as forgetfulness and disengagement. To address this, we developed Oralytics, a mHealth intervention system designed to complement clinician-delivered preventative care for marginalized individuals at risk for dental disease. Oralytics incorporates an online reinforcement learning algorithm to determine optimal times to deliver intervention prompts that encourage oral self-care behaviors. We have deployed Oralytics in a registered clinical trial. The deployment required careful design to manage challenges specific to the clinical trials setting in the U.S. In this paper, we (1) highlight key design decisions of the RL algorithm that address these challenges and (2) conduct a re-sampling analysis to evaluate algorithm design decisions. A second phase (randomized control trial) of Oralytics is planned to start in spring 2025.},
+}
+
 
 @article{psar2024,
   abbr={Bandits/RL},
@@ -153,20 +180,9 @@ In this paper, we frame the application of RL in practice as a three-component p
   pdf={https://arxiv.org/abs/2405.19466},
   abstract={We pose uncertainty quantification and exploration in online decision-making as a problem of training and generation from an autoregressive sequence model, an area experiencing rapid innovation. 
 Our approach rests on viewing uncertainty as arising from missing future outcomes that would be revealed through appropriate action choices, rather than from unobservable latent parameters of the environment. This reformulation aligns naturally with modern machine learning capabilities: we can i) train generative models through next-outcome prediction rather than fit explicit priors, ii) assess uncertainty through autoregressive generation rather than parameter sampling, and iii) adapt to new information through in-context learning rather than explicit posterior updating. To showcase these ideas, we formulate a challenging meta-bandit problem where effective performance requires leveraging unstructured prior information (like text features) while exploring judiciously to resolve key remaining uncertainties. We validate our approach through both theory and experiments. Our theory establishes a reduction, showing success at offline next-outcome prediction translates to reliable online uncertainty quantification and decision-making, even with strategically collected data. Semi-synthetic experiments show our insights bear out in a news-article recommendation task, where article text can be leveraged to minimize exploration.},
-  selected={true}
+  selected={false}
 }
 
-@article{trella2024monitoring,
-  abbr={Bandits/RL},
-  bibtex_show={true},
-  title={A Deployed Online Reinforcement Learning Algorithm In An Oral Health Clinical Trial},
-  author={Trella, Anna L and Zhang, Kelly W. and Jajal, Hinal and  Nahum-Shani, Inbal and Shetty, Vivek and Doshi-Velez, Finale and Murphy, Susan A},
-  journal={Proceedings of the AAAI Conference on Artificial Intelligence},
-  year={2025},
-  arxiv={2409.02069},
-  pdf={https://dl.acm.org/doi/10.1609/aaai.v39i28.35143},
-  abstract={Dental disease is a prevalent chronic condition associated with substantial financial burden, personal suffering, and increased risk of systemic diseases. Despite widespread recommendations for twice-daily tooth brushing, adherence to recommended oral self-care behaviors remains sub-optimal due to factors such as forgetfulness and disengagement. To address this, we developed Oralytics, a mHealth intervention system designed to complement clinician-delivered preventative care for marginalized individuals at risk for dental disease. Oralytics incorporates an online reinforcement learning algorithm to determine optimal times to deliver intervention prompts that encourage oral self-care behaviors. We have deployed Oralytics in a registered clinical trial. The deployment required careful design to manage challenges specific to the clinical trials setting in the U.S. In this paper, we (1) highlight key design decisions of the RL algorithm that address these challenges and (2) conduct a re-sampling analysis to evaluate algorithm design decisions. A second phase (randomized control trial) of Oralytics is planned to start in spring 2025.},
-}
 
 @article{oralytics2024,
   abbr={Bandits/RL},
