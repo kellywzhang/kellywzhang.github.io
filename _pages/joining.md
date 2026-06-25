@@ -25,7 +25,7 @@ Here is the [learning agreement](https://docs.google.com/document/d/1xCyEq06xDTI
 
 
 
-##### **Possible project directions**
+<!--##### **Possible project directions**
 I am interested in designing methods for real-world decision-making problems. I'm particularly interested in decision-making in environments that are stochastic and lack accurate mechanistic models of the environment (like healthcare, recommendation systems, social sciences---in contrast to video games and robotics). Some directions I'm currently particularly interested in:
 - Using [foundation models](https://arxiv.org/abs/2303.04129) and pretraining techniques on historical data for more efficient exploration, decision-making, and policy improvement. See [this paper](https://arxiv.org/abs/2502.07064) for our initial efforts in this direction. I'm particularly interested in exploring if these methods can be used in [small data settings](https://arxiv.org/abs/2406.12031).
-- Collaborating with organizations interested in using decision-making algorithms. I recently started working with American Express and [neonatal care physicians](https://www.hdruk.ac.uk/about-us/involving-and-engaging-patients-and-the-public/get-involved/your-data-in-action/the-national-neonatal-research-database-making-faster-safer-and-more-efficient-improvements-to-neonatal-healthcare/).
+- Collaborating with organizations interested in using decision-making algorithms. I recently started working with American Express and [neonatal care physicians](https://www.hdruk.ac.uk/about-us/involving-and-engaging-patients-and-the-public/get-involved/your-data-in-action/the-national-neonatal-research-database-making-faster-safer-and-more-efficient-improvements-to-neonatal-healthcare/).-->

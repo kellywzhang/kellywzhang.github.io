@@ -21,13 +21,22 @@ profiles:
     department: Ph.D. student (StatML CDT)
     link: "https://susannapaoli.com/"
     coadvisor: 
-#  - align: left
-#    image: lab/dillon-vijaya.jpg 
-#    image_circular: 
-#    name: dillon vijaya
-#    department: ph.d. student (ai4health cdt)
-#    link: "https://www.linkedin.com/in/dillon-vijaya-599071192/?originalsubdomain=uk"
-#    coadvisor: co-advised with dennis wang and neena modi
+  - align: left
+    image: lab/Sofia-Gilardini.jpg
+    image_circular: 
+    name: Sofia Gilardini
+    department: Ph.D. Student (StatML CDT)
+    link: "https://statml.io/students/sofia-gilardini/"
+    coadvisor: 
+
+alumni:
+  - align: left
+    image: lab/Da-In-Kim.jpg
+    image_circular: false
+    name: Da In Kim
+    department: Msc Student
+    link: "https://scholar.google.com/citations?user=33FXMOIAAAAJ&hl=ko"
+    coadvisor: 
   - align: left
     image: lab/Lai-Wei-Siang.jpg
     image_circular: false

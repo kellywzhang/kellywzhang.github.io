@@ -207,6 +207,13 @@ ul.task-list input[type="checkbox"] {
   }
 }
 
+.profile-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  width: 100%;
+}
+
 .profile.float-right {
   margin-left: 1rem;
 }
@@ -1447,4 +1454,3 @@ figure.cover {
     height: auto;
     display: block; 
 }
-

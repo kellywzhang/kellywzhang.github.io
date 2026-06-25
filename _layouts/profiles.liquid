@@ -6,8 +6,42 @@ layout: page
     {% if page.profiles %}
     <div class="container">
       <div class="row justify-content-center">
-      <div style="display: flex; flex-wrap: wrap; gap: 30px;">
+      <div class="profile-grid">
       {% for profile in page.profiles %}
+        <div class="profile text-center">
+          {% if profile.image %}
+            {% assign profile_image_path = profile.image | prepend: 'assets/img/' %}
+            {% if profile.image_circular %}
+              {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
+            {% else %}
+              {% assign profile_image_class = 'img-fluid z-depth-1 rounded' %}
+            {% endif %}
+            {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px) 30vw, 95vw"{% endcapture %}
+            {% include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=profile.image %}
+          {% endif %}
+          {% if profile.name %}
+            {% if profile.link %}
+              <p style="font-size: 18px" clasgjs="profile-name"><strong><a href="{{ profile.link }}" target="_blank">{{ profile.name }}</a></strong><br>
+              <strong>{{ profile.department }}</strong><br>
+              {{ profile.coadvisor }}
+              </p>
+            {% else %}
+              <p class="profile-name">{{ profile.name }}</p>
+            {% endif %}
+          {% endif %}
+        </div>
+
+      {% endfor %}
+    </div>
+    </div>
+    </div>
+    {% endif %}
+    <h1 class="post-title mt-5 mb-4">Alumni</h1>
+    {% if page.alumni %}
+    <div class="container">
+      <div class="row justify-content-center">
+      <div class="profile-grid">
+      {% for profile in page.alumni %}
         <div class="profile text-center">
           {% if profile.image %}
             {% assign profile_image_path = profile.image | prepend: 'assets/img/' %}
