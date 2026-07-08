@@ -28,6 +28,13 @@ profiles:
     department: Ph.D. Student (StatML CDT)
     link: "https://statml.io/students/sofia-gilardini/"
     coadvisor: 
+  - align: left
+    image: lab/James-Widdowson.png
+    image_circular: 
+    name: James Widdowson
+    department: Ph.D. Student (StatML CDT)
+    link: "https://statml.io/students/james-widdowson/"
+    coadvisor: 
 
 alumni:
   - align: left
