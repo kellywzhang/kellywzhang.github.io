@@ -7,7 +7,7 @@
   author={Schuetz, Narayan and Bai, Yuze and Pan, Lianggang and Eggert, Edgar and Nerrise, Favour and Delgado-SanMartin, Juan and Rosenblattl, Max and Gurbanova, Milana and Asadi, Mohammad and Johnson, Anders and Schmiedmayer, Paul and Wang, Dennis and Lawrie, Allan and Kim, Daniel Seung and Liu, Xin and Paruchuri, Akshay and Adeli, Ehsan and Ashley*, Euan and Zhang*, Kelly W.},
   journal={Under submission},
   year={2026},
-  pdf={https://myheartcounts.stanford.edu/assets/OpenMHC_preprint20260707-D8wbezht.pdf},
+  arxiv={2607.16235},
   website={https://myheartcounts.stanford.edu/openmhc},
   abstract={Mobile and wearable devices offer an unprecedented opportunity for continuous, passive health monitoring and active health coaching. However, the largest wearable datasets are not publicly available for research, and leading wearable foundation models trained on such datasets are rarely open-weight or come with reproducible training code. To accelerate open science in wearable health, we release \bo{OpenMyHeartCounts (OpenMHC)}, the largest and most comprehensive open-access wearable health dataset to date, alongside open-source implementations of recent wearable foundation models. \openmhc{}, derived from over a decade of data collected through the My Heart Counts study app, includes >60 million hours of wearable data across 19 sensor channels (e.g., step count, heart rate, sleep,  workouts) and up to 169 linked variables, including health, lifestyle, mood, and behavior from 11,894 consenting participants. Furthermore, we introduce a unified, open benchmark that enables standardized comparison of wearable health models across three tracks: health and behavior downstream prediction, multivariate data imputation, and time-series forecasting. We benchmark classical methods alongside recent wearable and multivariate time series foundation models. By open-sourcing data, code, and model weights at this unprecedented scale, we aim to democratize wearable health AI research and enable the community to drive open progress in this domain.},
   selected={true}
@@ -22,7 +22,6 @@
   journal={Under submission},
   year={2026},
   arxiv={2606.00913},
-  pdf={https://arxiv.org/abs/2606.00913},
   abstract={Multi-arm bandit algorithms are increasingly used in online platforms, clinical trials, and social science experiments, but valid statistical inference on their performance remains an open challenge. After deploying bandits, a natural question is whether one can construct a confidence interval for its mean reward and assess whether it reliably outperforms a baseline policy. The total reward achieved in any single bandit deployment is random, and deploying a bandit twice on the same population typically yields different reward trajectories due to stochastic rewards. Standard statistical inference methods cannot be used because bandit algorithms introduce complex dependencies in the collected data, which violate the i.i.d. assumption underlying many classical approaches. Moreover, existing inference methods for adaptively collected data only apply to estimands that do not depend on the data-collection algorithm (such as the mean reward under a fixed action). We propose Bandit Simulation for Inference (BSI), a framework that fits a simulator of the bandit environment from observed data--either on-policy or off-policy--and uses it to estimate the mean reward under any evaluation policy, including adaptive blackbox algorithms. BSI formally propagates uncertainty in the estimated simulator parameters into the confidence interval construction. Furthermore, for BSI to be valid, it requires only weak exploration assumptions on the behavior policy and avoids importance weighting. We prove that BSI yields asymptotically valid confidence intervals, and demonstrate empirically that it maintains nominal coverage in settings where standard off-policy evaluation methods fail.},
   selected={true}
 }
@@ -56,8 +55,7 @@ Trial Status: Recruitment commenced in March 2026 and is ongoing.},
   journal={Under submission},
   year={2026},
   arxiv={2601.22259},
-  pdf={https://arxiv.org/abs/2601.22259},
-  abstract={While tabular foundation models have achieved remarkable success in classification and regression, adapting them to model time-to-event outcomes for survival analysis is non-trivial due to right-censoring, where data observations may end before the event occurs. We develop a classification-based framework that reformulates both static and dynamic survival analysis as a series of binary classification problems by discretizing event times. Censored observations are naturally handled as examples with missing labels at certain time points. This classification formulation enables existing tabular foundation models to perform survival analysis through in-context learning without explicit training. We prove that under standard censoring assumptions, minimizing our binary classification loss recovers the true survival probabilities as the training set size increases. We demonstrate through evaluation across 53 real-world datasets that off-the-shelf tabular foundation models with this classification formulation outperform classical and deep learning baselines on average over multiple survival metrics.},
+  abstract={While tabular foundation models have achieved remarkable success in classification and regression, adapting them to model time-to-event outcomes for survival analysis is non-trivial due to right-censoring, where data observations may end before the event of interest occurs. We utilize a classification-based framework that reformulates both static and dynamic survival analysis as a series of binary classification problems by discretizing event times. Censored observations are naturally handled as examples with missing labels at certain time points. This classification formulation enables existing tabular foundation models (TFMs) to perform survival analysis through in-context learning without explicit training. In contrast to classical approaches that use binary classifiers to model discrete-time hazards, our approach directly models cumulative failure probabilities, which we find empirically to be more robust to the number of discretization bins by avoiding multiplicative accumulation of per-bin errors. We prove that under standard censoring assumptions, minimizing our binary classification loss recovers the true survival probabilities as the training set size increases. We demonstrate through evaluation across 48 real-world datasets (43 static and 5 dynamic) that off-the-shelf TFMs with this classification formulation outperform classical and deep learning baselines on average over multiple survival metrics.},
   selected={true}
 }
 
@@ -69,7 +67,6 @@ Trial Status: Recruitment commenced in March 2026 and is ongoing.},
   journal={Major Revision at Annals of Applied Statistics},
   year={2026},
   arxiv={2601.15353},
-  pdf={https://arxiv.org/abs/2601.15353},
   abstract={Reinforcement learning (RL) has achieved remarkable success in real-world decision-making across diverse domains, including gaming, robotics, online advertising, public health, and natural language processing. Despite these advances, a substantial gap remains between RL research and its deployment in many practical settings. Two recurring challenges often underlie this gap. First, many settings offer limited opportunity for the agent to interact extensively with the target environment due to practical constraints. Second, many target environments often undergo substantial changes, requiring redesign and redeployment of RL systems (e.g., advancements in science and technology that change the landscape of healthcare delivery). Addressing these challenges and bridging the gap between basic research and application requires theory and methodology that directly inform the design, implementation, and continual improvement of RL systems in real-world settings.
 In this paper, we frame the application of RL in practice as a three-component process: (i) online learning and optimization during deployment, (ii) post- or between-deployment offline analyses, and (iii) repeated cycles of deployment and redeployment to continually improve the RL system. We provide a narrative review of recent advances in statistical RL that address these components, including methods for maximizing data utility for between-deployment inference, enhancing sample efficiency for online learning within-deployment, and designing sequences of deployments for continual improvement. We also outline future research directions in statistical RL that are use-inspired -- aiming for impactful application of RL in practice.},
   selected={false}
@@ -106,10 +103,10 @@ In this paper, we frame the application of RL in practice as a three-component p
   bibtex_show={true},
   title={Effective Monitoring of Online Decision-Making Algorithms in Digital Intervention Implementation},
   author={Trella*, Anna L. and Ghosh*, Susobhan and Bonar, Erin E. and Coughlin, Lara and Doshi-Velez, Finale and Guo, Yongyi and Hung, Pei-Yao and Nahum-Shani, Inbal and Shetty, Vivek and Walton, Maureen and Yan, Iris and Zhang, Kelly W. and Murphy, Susan A.},
-  journal={To appear in npj Digital Medicine},
+  journal={npj Digital Medicine},
   year={2026},
   arxiv={2409.10526},
-  pdf={https://arxiv.org/abs/2409.10526},
+  pdf={https://www.nature.com/articles/s41746-026-02669-4},
   abstract={Online AI decision-making algorithms are increasingly used by digital interventions to dynamically personalize treatment to individuals. These algorithms determine, in real-time, the delivery of treatment based on accruing data. The objective of this paper is to provide guidelines for enabling effective monitoring of online decision-making algorithms with the goal of (1) safeguarding individuals and (2) ensuring data quality. We elucidate guidelines and discuss our experience in monitoring online decision-making algorithms in two digital intervention clinical trials (Oralytics and MiWaves). Our guidelines include (1) developing fallback methods, pre-specified procedures executed when an issue occurs, and (2) identifying potential issues categorizing them by severity (red, yellow, and green). Across both trials, the monitoring systems detected real-time issues such as out-of-memory issues, database timeout, and failed communication with an external source. Fallback methods prevented participants from not receiving any treatment during the trial and also prevented the use of incorrect data in statistical analyses. These trials provide case studies for how health scientists can build monitoring systems for their digital intervention. Without these algorithm monitoring systems, critical issues would have gone undetected and unresolved. Instead, these monitoring systems safeguarded participants and ensured the quality of the resulting data for updating the intervention and facilitating scientific discovery. These monitoring guidelines and findings give digital intervention teams the confidence to include online decision-making algorithms in digital interventions.},
   selected={false}
 }
@@ -122,7 +119,6 @@ In this paper, we frame the application of RL in practice as a three-component p
   author={Zhang, Kelly W. and Baldwin-McDonald, Thomas and Ciosek, Kamil and Maystre, Lucas and Russo, Daniel},
   journal={To appear in Journal of Machine Learning (JMLR)},
   year={2026},
-  pdf={https://arxiv.org/abs/2501.07761},
   arxiv={2501.07761},
   abstract={Increasingly, recommender systems are tasked with improving users' long-term satisfaction. In this context, we study a content exploration task, which we formalize as a bandit problem with delayed rewards. There is an apparent trade-off in choosing the learning signal: waiting for the full reward to become available might take several weeks, slowing the rate of learning, whereas using short-term proxy rewards reflects the actual long-term goal only imperfectly. First, we develop a predictive model of delayed rewards that incorporates all information obtained to date. Rewards as well as shorter-term surrogate outcomes are combined through a Bayesian filter to obtain a probabilistic belief. Second, we devise a bandit algorithm that quickly learns to identify content aligned with long-term success using this new predictive model. We prove a regret bound for our algorithm that depends on the Value of Progressive Feedback, an information theoretic metric that captures the quality of short-term leading indicators that are observed prior to the long-term reward. We apply our approach to a podcast recommendation problem, where we seek to recommend shows that users engage with repeatedly over two months. We empirically validate that our approach significantly outperforms methods that optimize for short-term proxies or rely solely on delayed rewards, as demonstrated by an A/B test in a recommendation system that serves hundreds of millions of users.},
   selected={true}
@@ -191,9 +187,7 @@ In this paper, we frame the application of RL in practice as a three-component p
   journal={Working paper; Selected for presentation at the Econometric Society Interdisciplinary Frontiers: Economics and AI+ML conference},
   year={2024},
   arxiv={2405.19466},
-  pdf={https://arxiv.org/abs/2405.19466},
-  abstract={We pose uncertainty quantification and exploration in online decision-making as a problem of training and generation from an autoregressive sequence model, an area experiencing rapid innovation. 
-Our approach rests on viewing uncertainty as arising from missing future outcomes that would be revealed through appropriate action choices, rather than from unobservable latent parameters of the environment. This reformulation aligns naturally with modern machine learning capabilities: we can i) train generative models through next-outcome prediction rather than fit explicit priors, ii) assess uncertainty through autoregressive generation rather than parameter sampling, and iii) adapt to new information through in-context learning rather than explicit posterior updating. To showcase these ideas, we formulate a challenging meta-bandit problem where effective performance requires leveraging unstructured prior information (like text features) while exploring judiciously to resolve key remaining uncertainties. We validate our approach through both theory and experiments. Our theory establishes a reduction, showing success at offline next-outcome prediction translates to reliable online uncertainty quantification and decision-making, even with strategically collected data. Semi-synthetic experiments show our insights bear out in a news-article recommendation task, where article text can be leveraged to minimize exploration.},
+  abstract={We pose uncertainty quantification and exploration in online decision-making as a problem of training and generation from an autoregressive sequence model, an area experiencing rapid innovation. Our approach rests on viewing uncertainty as arising from missing future outcomes that could be revealed through action choices, rather than from unobservable latent parameters of the environment. This reformulation aligns naturally with modern machine learning capabilities: we can i) train generative models through next-outcome prediction rather than fit explicit priors, ii) assess uncertainty through autoregressive generation rather than sampling latent parameters from posteriors, and iii) adapt to new information by extending the sequence model's context rather than explicit posterior updating. Our main theoretical result establishes a reduction from online decision-making to offline next-outcome prediction: Bayesian regret is controlled directly by the sequence model's offline prediction loss, without requiring an explicit latent-variable posterior. Experiments, including a semi-synthetic news recommendation task, show that autoregressive generation produces calibrated epistemic uncertainty and enables effective exploration by using article text as prior information to focus exploration on resolving remaining uncertainties.},
   selected={false}
 }
 
@@ -206,7 +200,6 @@ Our approach rests on viewing uncertainty as arising from missing future outcome
   journal={Technical report},
   year={2024},
   arxiv={2406.13127},
-  pdf={https://arxiv.org/abs/2406.13127},
   abstract={Dental disease is still one of the most common chronic diseases in the United States. While dental disease is preventable through healthy oral self-care behaviors (OSCB), this basic behavior is not consistently practiced. We have developed Oralytics, an online, reinforcement learning (RL) algorithm that optimizes the delivery of personalized intervention prompts to improve OSCB. In this paper, we offer a full overview of algorithm design decisions made using prior data, domain expertise, and experiments in a simulation test bed. The finalized RL algorithm was deployed in the Oralytics clinical trial, conducted from fall 2023 to summer 2024.},
   selected={false}
 }
@@ -221,7 +214,6 @@ Our approach rests on viewing uncertainty as arising from missing future outcome
   journal={Working paper},
   year={2024},
   arxiv={2402.17003},
-  pdf={https://arxiv.org/abs/2402.17003},
   abstract={Online reinforcement learning (RL) algorithms offer great potential for personalizing treatment for participants in clinical trials. However, deploying an online, autonomous algorithm in the high-stakes healthcare setting makes quality control and data quality especially difficult to achieve. This paper proposes algorithm fidelity as a critical requirement for deploying online RL algorithms in clinical trials. It emphasizes the responsibility of the algorithm to (1) safeguard participants and (2) preserve the scientific utility of the data for post-trial analyses. We also present a framework for pre-deployment planning and real-time monitoring to help algorithm developers and clinical researchers ensure algorithm fidelity. To illustrate our framework's practical application, we present real-world examples from the Oralytics clinical trial. Since Spring 2023, this trial successfully deployed an autonomous, online RL algorithm to personalize behavioral interventions for participants at risk for dental disease.}
 }
 
@@ -234,7 +226,6 @@ Our approach rests on viewing uncertainty as arising from missing future outcome
   journal={Working paper},
   year={2024},
   arxiv={2403.10946},
-  pdf={https://arxiv.org/abs/2403.10946},
   abstract={In the realm of Reinforcement Learning (RL), online RL is often conceptualized as an optimization problem, where an algorithm interacts with an unknown environment to minimize cumulative regret. In a stationary setting, strong theoretical guarantees, like a sublinear (√T) regret bound, can be obtained, which typically implies the convergence to an optimal policy and the cessation of exploration. However, these theoretical setups often oversimplify the complexities encountered in real-world RL implementations, where tasks arrive sequentially with substantial changes between tasks and the algorithm may not be allowed to adaptively learn within certain tasks. We study the changes beyond the outcome distributions, encompassing changes in the reward designs (mappings from outcomes to rewards) and the permissible policy spaces. Our results reveal the fallacy of myopically minimizing regret within each task: obtaining optimal regret rates in the early tasks may lead to worse rates in the subsequent ones, even when the outcome distributions stay the same. To realize the optimal cumulative regret bound across all the tasks, the algorithm has to overly explore in the earlier tasks. This theoretical insight is practically significant, suggesting that due to unanticipated changes (e.g., rapid technological development or human-in-the-loop involvement) between tasks, the algorithm needs to explore more than it would in the usual stationary setting within each task. Such implication resonates with the common practice of using clipped policies in mobile health clinical trials and maintaining a fixed rate of ϵ-greedy exploration in robotic learning.}
 }
 
@@ -305,7 +296,7 @@ Conclusion: This study represents a critical first step in developing an effecti
   volume={37},
   number={13},
   pages={15724--15730},
-  arxiv={https://arxiv.org/abs/2208.07406},
+  arxiv={2208.07406},
   pdf={https://ojs.aaai.org/index.php/AAAI/article/view/26866},
   code={https://github.com/StatisticalReinforcementLearningLab/oralytics_reward_design},
   year={2023},
@@ -320,7 +311,6 @@ Conclusion: This study represents a critical first step in developing an effecti
   journal={Working paper},
   year={2023},
   arxiv={2202.07098},
-  pdf={https://arxiv.org/abs/2202.07098},
   abstract={Online reinforcement learning and other adaptive sampling algorithms are increasingly used in digital intervention experiments to optimize treatment delivery for users over time. In this work, we focus on longitudinal user data collected by a large class of adaptive sampling algorithms that are designed to optimize treatment decisions online using accruing data from multiple users. Combining or "pooling" data across users allows adaptive sampling algorithms to potentially learn faster. However, by pooling, these algorithms induce dependence between the sampled user data trajectories; we show that this can cause standard variance estimators for i.i.d. data to underestimate the true variance of common estimators on this data type. We develop novel methods to perform a variety of statistical analyses on such adaptively sampled data via Z-estimation. Specifically, we introduce the \textit{adaptive} sandwich variance estimator, a corrected sandwich estimator that leads to consistent variance estimates under adaptive sampling. Additionally, to prove our results we develop novel theoretical tools for empirical processes on non-i.i.d., adaptively sampled longitudinal data which may be of independent interest. This work is motivated by our efforts in designing experiments in which online reinforcement learning algorithms optimize treatment decisions, yet statistical inference is essential for conducting analyses after experiments conclude.}
 }
 
@@ -385,7 +375,6 @@ ABSTRACT = {Online reinforcement learning (RL) algorithms are increasingly used 
   title={A bayesian approach to learning bandit structure in markov decision processes},
   author={Zhang, Kelly W. and Gottesman, Omer and Doshi-Velez, Finale},
   arxiv={2208.00250},
-  pdf={https://arxiv.org/abs/2208.00250},
   journal={Challenges of Real-World Reinforcement Learning},
   year={2020},
   video={https://www.youtube.com/watch?v=qwslWkKrCRU&ab_channel=SusanMurphyLab},
